@@ -7,8 +7,14 @@ import { Component, Input} from '@angular/core';
 })
 export class InputComponent {
   @Input() type : string;
-  @Input () placeholder: string;
-  constructor() { }
+  focused: boolean;
 
+  onBlur(event: any) {
+    const value = event.target.value;
+
+    if (!value) {
+      this.focused = false;
+    }
+  }
 
 }
