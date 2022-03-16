@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { SignPage } from './sign.page';
+import { SplashscreenPage } from './splashscreen.page';
 
 const routes: Routes = [
   {
-    path: 'signup',
-    component: SignPage
+    path: '',
+    component: SplashscreenPage
   }
+  
+
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class SignPageRoutingModule {}
+export class SplashscreenPageRoutingModule {}

@@ -4,20 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { SignPageRoutingModule } from './sign-routing.module';
+import { SplashscreenPageRoutingModule } from './splashscreen-routing.module';
 
-import { SignPage } from './sign.page';
-import { SharedModule } from '../components/shared.module';
+import { SplashscreenPage } from './splashscreen.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SignPageRoutingModule,
-    SharedModule,
-
+    SplashscreenPageRoutingModule
   ],
-  declarations: [SignPage]
+  declarations: [SplashscreenPage]
 })
-export class SignPageModule {}
+export class SplashscreenPageModule {}
